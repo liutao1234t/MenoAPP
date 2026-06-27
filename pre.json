@@ -1,0 +1,216 @@
+{
+  "app": {
+    "id": "meno_masquerade",
+    "displayName": "Meno",
+    "visualTheme": {
+      "background": "midnight black",
+      "accent": "ceremonial gold",
+      "typographyMood": "editorial couture"
+    }
+  },
+  "userProfile": {
+    "profileId": "guest_0427",
+    "alias": "Velvet Guest",
+    "status": {
+      "tier": "invited",
+      "presence": "renjigaoding"
+    }
+  },
+  "onboarding": {
+    "completedSteps": ["portraitPermission", "themeChoice"],
+    "preferredMood": {
+      "primary": "mysterious",
+      "secondary": "romantic"
+    }
+  },
+  "wallet": {
+    "tokenBalance": 1200,
+    "spendingRules": {
+      "aiSynthesisCost": 100,
+      "eventEntryCost": 0
+    }
+  },
+  "aiStudio": {
+    "sessionId": "studio_7851",
+    "state": "ready",
+    "estimate": {
+      "seconds": 30,
+      "qualityMode": "cinematic"
+    }
+  },
+  "portraitInput": {
+    "source": "photo_library",
+    "required": true,
+    "imageMeta": {
+      "orientation": "portrait",
+      "faceCount": 1
+    }
+  },
+  "visageSelector": {
+    "selectedSource": "online_gallery",
+    "options": {
+      "library": true,
+      "gallery": true
+    }
+  },
+  "metamorphosis": {
+    "intensity": 75,
+    "blend": {
+      "identityPreservation": 62,
+      "maskDominance": 88
+    }
+  },
+  "generationJob": {
+    "jobId": "gen_midnight_2038",
+    "progress": {
+      "phase": "queued",
+      "percentage": 0
+    }
+  },
+  "maskStyles": {
+    "activeCategory": "All Picks",
+    "categories": {
+      "venetian": "ornate gold",
+      "cyberGothic": "luminous chrome",
+      "floral": "botanical porcelain"
+    }
+  },
+  "invitationWall": {
+    "headline": "Discover the Avant-Garde",
+    "filters": {
+      "selected": "All Picks",
+      "available": ["Venetian", "Cyber-Gothic", "Botanical"]
+    }
+  },
+  "themeCollections": {
+    "sectionTitle": "Masquerade Themes",
+    "featured": {
+      "first": "Venetian Night",
+      "second": "Gothic Ball"
+    }
+  },
+  "exploreFeed": {
+    "layout": "two_column_grid",
+    "items": {
+      "firstCard": "Midnight Filigree",
+      "secondCard": "Prism Veil"
+    }
+  },
+  "favorites": {
+    "count": 6,
+    "latest": {
+      "title": "Brass Automaton",
+      "savedAt": "2026-06-27T19:42:00+08:00"
+    }
+  },
+  "chat": {
+    "conversationId": "chat_aurelius_vane",
+    "assistantPersona": {
+      "name": "Aurelius Vane",
+      "role": "Master Artificer"
+    }
+  },
+  "persona": {
+    "tone": "refined stylist",
+    "specialties": {
+      "fabric": "silk velvet",
+      "ornament": "gold filigree"
+    }
+  },
+  "messageComposer": {
+    "placeholder": "Whisper a message...",
+    "actions": {
+      "send": true,
+      "attachImage": true
+    }
+  },
+  "mediaAttachment": {
+    "type": "concept_art",
+    "imageSample": {
+      "caption": "midnight cloak with gold hem",
+      "aspectRatio": "16:10"
+    }
+  },
+  "event": {
+    "name": "The Grand Metamorphosis Event",
+    "access": {
+      "label": "exclusive",
+      "registrationOpen": true
+    }
+  },
+  "registration": {
+    "entryId": "entry_royal_991",
+    "preferences": {
+      "theme": "Royal Fantasy",
+      "notifyBeforeStart": true
+    }
+  },
+  "notifications": {
+    "enabled": true,
+    "channels": {
+      "eventReminder": true,
+      "synthesisReady": true
+    }
+  },
+  "safety": {
+    "contentChecks": {
+      "portraitConsent": true,
+      "publicSharingAllowed": false
+    }
+  },
+  "community": {
+    "visibility": "private_default",
+    "sharing": {
+      "allowShowcase": false,
+      "allowDirectMessage": true
+    }
+  },
+  "privacy": {
+    "aiDataUse": "feature_processing_only",
+    "retention": {
+      "generatedHistoryDays": 30,
+      "supportLogsDays": 180
+    }
+  },
+  "subscriptions": {
+    "plan": "free",
+    "benefits": {
+      "dailyGalleryAccess": true,
+      "premiumMasks": false
+    }
+  },
+  "analytics": {
+    "session": {
+      "screen": "AI Studio",
+      "durationSeconds": 214
+    }
+  },
+  "localization": {
+    "language": "en",
+    "region": {
+      "country": "US",
+      "timeZone": "Asia/Shanghai"
+    }
+  },
+  "accessibility": {
+    "settings": {
+      "reduceMotion": false,
+      "largeText": false,
+      "highContrast": true
+    }
+  },
+  "systemConfig": {
+    "version": "1.0.0",
+    "featureFlags": {
+      "onlineGallery": true,
+      "eventRegistration": true
+    }
+  },
+  "support": {
+    "email": "support@meno.ink",
+    "response": {
+      "businessDays": 3,
+      "languages": ["English", "Chinese"]
+    }
+  }
+}
