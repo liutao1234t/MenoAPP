@@ -1,54 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Meno Terms of Service</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meno - Terms of Service</title>
   <style>
     :root {
       --bg: #090a0f;
-      --panel: rgba(22, 22, 28, .82);
-      --line: rgba(235, 198, 80, .26);
+      --panel: rgba(22, 22, 28, 0.85);
+      --line: rgba(235, 198, 80, 0.26);
       --gold: #f3ca42;
       --text: #f5f1e8;
       --muted: #b9b1a4;
     }
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.72;
       background:
-        radial-gradient(circle at 18% 12%, rgba(243, 202, 66, .16), transparent 28%),
-        radial-gradient(circle at 88% 22%, rgba(84, 184, 204, .12), transparent 30%),
+        radial-gradient(circle at 18% 12%, rgba(243, 202, 66, 0.16), transparent 28%),
+        radial-gradient(circle at 88% 22%, rgba(84, 184, 204, 0.12), transparent 30%),
         linear-gradient(180deg, #111117 0%, var(--bg) 48%, #050609 100%);
+      background-attachment: fixed;
+      min-height: 100vh;
     }
-    .wrap { max-width: 760px; margin: 0 auto; padding: 28px 18px 56px; }
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
     header {
-      padding: 34px 20px 28px;
+      padding: 36px 24px 30px;
       border: 1px solid var(--line);
-      border-radius: 22px;
-      background: linear-gradient(150deg, rgba(255,255,255,.06), rgba(255,255,255,.015));
-      box-shadow: 0 18px 60px rgba(0,0,0,.34);
+      border-radius: 20px;
+      background: linear-gradient(150deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.015));
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(8px);
     }
-    .brand { color: var(--gold); font-family: Georgia, serif; font-size: 42px; letter-spacing: .08em; margin: 0; }
-    .kicker { color: var(--gold); font-weight: 700; letter-spacing: .18em; font-size: 12px; margin: 0 0 12px; text-transform: uppercase; }
-    h1 { font-family: Georgia, serif; font-size: 34px; line-height: 1.05; margin: 8px 0 12px; }
-    h2 { color: var(--gold); font-family: Georgia, serif; font-size: 24px; line-height: 1.22; margin: 30px 0 10px; }
-    p, li { font-size: 16px; }
+    .brand {
+      color: var(--gold);
+      font-family: Georgia, serif;
+      font-size: 40px;
+      letter-spacing: 0.08em;
+      margin: 0;
+      font-weight: 700;
+    }
+    .kicker {
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      font-size: 12px;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-family: Georgia, serif;
+      font-size: 32px;
+      line-height: 1.15;
+      margin: 10px 0 14px;
+    }
+    h2 {
+      color: var(--gold);
+      font-family: Georgia, serif;
+      font-size: 22px;
+      line-height: 1.25;
+      margin: 0 0 12px;
+    }
+    p, li {
+      font-size: 15.5px;
+      color: var(--text);
+    }
     .card {
-      margin-top: 18px;
-      padding: 18px;
-      border: 1px solid rgba(255,255,255,.08);
+      margin-top: 20px;
+      padding: 22px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
       border-left: 3px solid var(--gold);
       border-radius: 14px;
       background: var(--panel);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
     }
-    a { color: var(--gold); }
-    ul { padding-left: 20px; }
-    .muted { color: var(--muted); }
-    footer { margin-top: 34px; color: var(--muted); font-size: 13px; text-align: center; }
+    a {
+      color: var(--gold);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    a:hover {
+      opacity: 0.85;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 8px 0 0;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+    .muted {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+    footer {
+      margin-top: 40px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
   </style>
 </head>
 <body>
@@ -57,74 +121,78 @@
       <p class="kicker">Masquerade Access</p>
       <p class="brand">MENO</p>
       <h1>Terms of Service</h1>
-      <p class="muted">Effective date: June 27, 2026</p>
-      <p>These Terms govern your use of Meno, a mobile experience for discovering masquerade themes, creating AI-assisted portrait transformations, joining digital couture events, saving favorite looks, and chatting with creative personas.</p>
+      <p class="muted">Last updated: November 12, 2026</p>
+      <p>These Terms govern your access to and use of Meno ("the App"), an application dedicated to masquerade aesthetics, AI-assisted portrait styling, digital couture exploration, curated gallery displays, and creative interactions.</p>
     </header>
 
     <section class="card">
-      <h2>1. Acceptance</h2>
-      <p>By accessing or using Meno, you agree to these Terms. If you do not agree, do not use the app. You must be old enough to use online social and creative services in your region, and you are responsible for any activity that happens through your account or device.</p>
+      <h2>1. Acceptance of Terms</h2>
+      <p>By downloading, accessing, or using Meno, you enter into a binding agreement with us under these Terms of Service. If you do not agree to these Terms, please do not use the App. You affirm that you are of the legal age required in your jurisdiction to use online creative and social services.</p>
     </section>
 
     <section class="card">
-      <h2>2. What Meno Provides</h2>
-      <p>Meno offers themed masquerade galleries, invitation-style discovery pages, AI Studio synthesis tools, event participation features, token-based creative actions, saved favorites, profile features, and chat-like creative guidance. Features may change as we improve the product.</p>
-      <p>Some parts of Meno may display fictional hosts, stylists, artisans, or personas. They are part of the creative experience and should not be treated as real people, professional advisers, or emergency support channels.</p>
+      <h2>2. The Meno Experience</h2>
+      <p>Meno provides masquerade-themed collections, digital couture showcases, AI Studio styling tools, event participation features, token-based creative actions, and interactive creative personas. Features may evolve, be updated, or be discontinued as we continuously refine the product experience.</p>
+      <p>Portrayals of fictional hosts, stylists, or artisans are creative story elements intended solely for aesthetic immersion and should not be treated as real individuals or professional advisers.</p>
     </section>
 
     <section class="card">
-      <h2>3. AI Synthesis</h2>
-      <p>Meno includes AI synthesis features that can transform a portrait or selected visual input into a masquerade-inspired style. The AI model is trained and operated by us for creative generation. We do not use the AI synthesis feature to collect personal information beyond what is technically needed to process your chosen request, display the result, maintain service reliability, and protect the community.</p>
-      <p>Generated images are creative outputs. They may be stylized, inaccurate, unexpected, or unsuitable for some uses. You should not rely on AI outputs for identity verification, legal documents, medical decisions, financial decisions, or any situation where factual accuracy is required.</p>
+      <h2>3. AI Synthesis & Creative Output</h2>
+      <p>Meno includes artificial intelligence synthesis tools designed to re-imagine your portraits into artistic masquerade styles. The AI processing is intended strictly for creative generation. We do not use your submitted visual inputs for purposes beyond fulfilling your styling requests, providing the requested results, and maintaining system safety.</p>
+      <p>AI-generated imagery is artistic and interpretive. Outputs may occasionally be stylistically unexpected or imprecise. You agree not to rely on generated outputs for identification, legal documentation, authentication, or any situation requiring objective factual accuracy.</p>
     </section>
 
     <section class="card">
-      <h2>4. User Content</h2>
-      <p>You may upload portraits, send prompts, create looks, save favorites, and submit messages or event details. You confirm that you have the right to use any content you provide, including consent from any person whose image appears in an upload.</p>
-      <p>You retain ownership of your own content. You grant Meno a limited permission to host, process, transform, display, and store your content solely to operate the app, provide requested features, improve safety, troubleshoot issues, and maintain your account experience.</p>
+      <h2>4. User Content & Face Imagery</h2>
+      <p>You may upload photos, provide creative prompts, and share generated looks. You represent and warrant that you possess all necessary rights, permissions, or consents to submit any content, specifically including explicit permission from any recognizable person whose facial likeness is submitted.</p>
+      <p>You retain full ownership of your original content. By submitting content, you grant Meno a limited, non-exclusive license solely to host, process, transform, and display such materials as necessary to deliver the requested styling features, ensure security, and maintain your account history.</p>
     </section>
 
     <section class="card">
-      <h2>5. Token Features and Purchases</h2>
-      <p>Meno may use tokens or other app balances for AI synthesis, premium looks, event entries, or similar features. Token costs and availability may vary by region, feature, or promotion. Unless required by law or Apple policy, used tokens, consumed credits, and completed digital actions are not refundable.</p>
+      <h2>5. Digital Features & In-App Actions</h2>
+      <p>Meno may offer credits, tokens, or app balances for unlocking AI syntheses, premium styles, or digital event participation. Pricing and availability are displayed within the App and may vary by region or campaign.</p>
+      <p>Due to the immediate technical execution and digital nature of AI generation, consumed tokens, rendered imagery, and completed digital actions are non-refundable once performed, except where mandatory statutory consumer rights apply under applicable law (see Section 9 for details on statutory rights and withdrawal waivers).</p>
     </section>
 
     <section class="card">
-      <h2>6. Acceptable Use</h2>
+      <h2>6. Acceptable Use & Community Safety</h2>
+      <p>To preserve a secure and welcoming environment, you agree not to:</p>
       <ul>
-        <li>Do not impersonate others, create deceptive identity claims, or use another person's image without permission.</li>
-        <li>Do not upload illegal, hateful, sexually exploitative, harassing, violent, or privacy-invasive content.</li>
-        <li>Do not attempt to bypass safety systems, scrape the service, disrupt servers, reverse engineer protected parts of Meno, or automate abusive activity.</li>
-        <li>Do not use Meno outputs to defame, threaten, manipulate, or mislead people.</li>
+        <li>Impersonate any individual, deceive others regarding your identity, or use another person's likeness without authorization.</li>
+        <li>Upload, generate, or transmit unlawful, harassing, hateful, sexually explicit, abusive, non-consensual, or privacy-invasive materials.</li>
+        <li>Use Meno's AI tools to create deceptive deepfakes, defame individuals, or mislead the public.</li>
+        <li>Circumvent security protections, scrape service endpoints, inject malicious code, or reverse engineer protected components of the App.</li>
       </ul>
     </section>
 
     <section class="card">
-      <h2>7. Community and Events</h2>
-      <p>Invitation walls, themed showcases, competitions, and event features are intended for creative participation. We may remove entries, restrict access, or suspend accounts that violate these Terms or our Community Rules. Participation does not guarantee visibility, selection, rewards, or continued access to a specific event.</p>
+      <h2>7. Content Moderation & Enforcement</h2>
+      <p>We reserve the right to review, restrict, or remove any content or user account that violates these Terms, applicable regulations, or community standards. We may deploy automated filtering or manual review to prevent abuse and protect our community.</p>
     </section>
 
     <section class="card">
-      <h2>8. Safety Actions</h2>
-      <p>We may limit, remove, or refuse content and accounts when necessary to protect users, comply with law, enforce these Terms, prevent fraud, or preserve the quality of the Meno experience. We may also adjust or remove generated content that appears unsafe, infringing, or abusive.</p>
+      <h2>8. Intellectual Property</h2>
+      <p>All software, visual identities, trademarks, artwork, interface designs, curated themes, and technology powering Meno are the exclusive property of Meno or our licensors. Except as expressly permitted, you may not copy, extract, modify, distribute, or create derivative works from our proprietary assets.</p>
     </section>
 
     <section class="card">
-      <h2>9. Intellectual Property</h2>
-      <p>Meno's name, interface, visual design, software, AI systems, curated collections, prompts, graphics, logos, and service structure are owned by us or our licensors. You may not copy, sell, sublicense, or create competing services from Meno's protected materials except where law allows.</p>
+      <h2>9. Disclaimers & Statutory Consumer Rights</h2>
+      <p>To the maximum extent permitted by applicable law, Meno is provided on an "as is" and "as available" basis without express or implied representations beyond those required by law. We do not guarantee uninterrupted availability, error-free operation, or permanent retention of any specific theme or look.</p>
+      <p><strong>Notice for Consumers in the European Economic Area (EEA) and the United Kingdom (UK):</strong></p>
+      <ul>
+        <li><strong>Legal Guarantee of Conformity:</strong> Under EU (Directive 2019/770) and UK consumer protection laws, you are legally entitled to a statutory guarantee of conformity for digital content and digital services. Nothing in these Terms excludes, restricts, or diminishes your statutory warranty rights. If a digital service or content item has a defect or fails to conform, you are entitled to statutory remedies, such as correction, re-performance, price reduction, or refund in accordance with local legislation.</li>
+        <li><strong>14-Day Right of Withdrawal & Immediate Execution Waiver:</strong> You generally have a statutory right to withdraw from purchase contracts within 14 days without providing any reason. However, for digital content (such as tokens, credits, or on-demand AI portrait synthesis), by requesting immediate execution or consuming digital tokens, you expressly consent to the immediate performance of the contract and acknowledge that you lose your right of withdrawal once the digital service has been performed or the token has been consumed.</li>
+        <li><strong>Dispute Resolution:</strong> If you have an unresolved dispute, consumers in the EU may access the European Commission's Online Dispute Resolution (ODR) platform at <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>, or submit complaints to relevant national consumer arbitration authorities.</li>
+      </ul>
     </section>
 
     <section class="card">
-      <h2>10. Disclaimers</h2>
-      <p>Meno is provided “as is” and “as available.” We do not promise uninterrupted access, perfect generated results, permanent availability of any theme, or compatibility with every device. To the fullest extent allowed by law, we are not liable for indirect, incidental, special, consequential, or punitive damages arising from your use of Meno.</p>
+      <h2>10. Updates & Contact</h2>
+      <p>We may revise these Terms from time to time to reflect product enhancements or legal obligations. Continued use of Meno following any revisions constitutes acceptance of the updated Terms.</p>
+      <p>If you have any questions, feedback, or report requests regarding these Terms, please contact our support team at <a href="mailto:support@meno.ink">support@meno.ink</a>.</p>
     </section>
 
-    <section class="card">
-      <h2>11. Changes and Contact</h2>
-      <p>We may update these Terms when the app, law, or business requirements change. Continued use after an update means you accept the revised Terms. For questions, contact <a href="mailto:support@meno.ink">support@meno.ink</a>.</p>
-    </section>
-
-    <footer>Meno Terms of Service</footer>
+    <footer>&copy; 2026 Meno. All rights reserved.</footer>
   </main>
 </body>
 </html>
